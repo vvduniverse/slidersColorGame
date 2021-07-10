@@ -38,32 +38,6 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vn6-MV-gAy">
-                                <rect key="frame" x="128" y="306" width="286" height="134.33333333333334"/>
-                                <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xEv-KQ-DCw">
-                                        <rect key="frame" x="-2" y="0.0" width="290" height="35.333333333333336"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="xEv-KQ-DCw" secondAttribute="height" multiplier="25:3" id="vEu-as-N2I"/>
-                                        </constraints>
-                                        <connections>
-                                            <action selector="redColorSet" destination="BYZ-38-t0r" eventType="valueChanged" id="JAB-IG-1ID"/>
-                                        </connections>
-                                    </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NkU-mR-EgZ">
-                                        <rect key="frame" x="-2" y="54.333333333333343" width="290" height="31"/>
-                                        <connections>
-                                            <action selector="greenColorSet" destination="BYZ-38-t0r" eventType="valueChanged" id="Sor-xK-DMu"/>
-                                        </connections>
-                                    </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Asn-J3-sq4">
-                                        <rect key="frame" x="-2" y="104.33333333333333" width="290" height="30.999999999999986"/>
-                                        <connections>
-                                            <action selector="blueColorSet" destination="BYZ-38-t0r" eventType="valueChanged" id="buv-ej-hdz"/>
-                                        </connections>
-                                    </slider>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="WGu-O9-O0a">
                                 <rect key="frame" x="78" y="310" width="34.333333333333336" height="117"/>
                                 <subviews>
@@ -87,21 +61,35 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Kh-EB-Ium">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Kh-EB-Ium">
                                 <rect key="frame" x="18" y="71" width="354" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="5Kh-EB-Ium" secondAttribute="height" multiplier="354:193" id="VmM-lS-jGC"/>
-                                </constraints>
                             </view>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NkU-mR-EgZ">
+                                <rect key="frame" x="121" y="353" width="255" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="greenColorSet" destination="BYZ-38-t0r" eventType="valueChanged" id="Sor-xK-DMu"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xEv-KQ-DCw">
+                                <rect key="frame" x="119" y="305" width="255" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="redColorSet" destination="BYZ-38-t0r" eventType="valueChanged" id="JAB-IG-1ID"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Asn-J3-sq4">
+                                <rect key="frame" x="121" y="401" width="255" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="blueColorSet" destination="BYZ-38-t0r" eventType="valueChanged" id="buv-ej-hdz"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="5Kh-EB-Ium" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="177:422" id="493-Yx-EXh"/>
-                            <constraint firstItem="5Kh-EB-Ium" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8Qr-3p-Fmi"/>
-                            <constraint firstItem="5Kh-EB-Ium" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="XBl-HZ-XFa"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="blueColorSlider" destination="Asn-J3-sq4" id="c6H-YH-Q3I"/>
